@@ -6,20 +6,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Packaging Insights | China Sourcing, Supply Chain & Export Challenges</title>
+<title>Resources | ChenBridge China Packaging Sourcing Guides & Downloads</title>
 
-<meta name="description" content="Practical insights on packaging sourcing in China, supplier evaluation, export challenges, and supply chain visibility. Articles and guides for global buyers.">
+<meta name="description" content="Download practical resources for global companies sourcing packaging from China: company overview, packaging capability guide, and how ChenBridge works.">
 
-<meta name="keywords" content="China packaging insights, evaluate packaging supplier China, export packaging challenges, packaging supply chain visibility">
+<meta name="keywords" content="China packaging sourcing resources, packaging capability guide, ChenBridge company overview, China sourcing process, packaging RFQ">
 
 <meta name="author" content="ChenBridge">
 
-<link rel="canonical" href="https://chenbridge.com/insights.html">
+<link rel="canonical" href="https://chenbridge.com/resources.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ChenBridge">
-<meta property="og:title" content="Packaging Insights">
-<meta property="og:description" content="Practical insights on sourcing packaging from China — how to evaluate packaging suppliers, common export packaging challenges, and supply chain visibility.">
-<meta property="og:url" content="https://chenbridge.com/insights.html">
+<meta property="og:title" content="Resources | ChenBridge">
+<meta property="og:description" content="Practical information for global companies sourcing packaging from China — company overview, capability guide, and sourcing process downloads.">
+<meta property="og:url" content="https://chenbridge.com/resources.html">
 <meta property="og:image" content="https://chenbridge.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -115,43 +115,50 @@ function googleTranslateElementInit() {
 
 <div class="container" style="max-width:820px; text-align:center;">
 
-<span class="page-label">Insights</span>
+<span class="page-label">Resources</span>
 
-<h1>Packaging Insights</h1>
+<h1>Practical Information for Global Companies Sourcing from China</h1>
 
-<p style="margin:0 auto;">Practical knowledge for global companies sourcing packaging from China — written from hands-on project experience.</p>
+<p style="margin:0 auto;">Download overviews and guides that explain who we are, what packaging capabilities we support, and how ChenBridge works with international buyers.</p>
 
 </div>
 
 </section>
 
 
-<!-- ================= ARTICLES ================= -->
+<!-- ================= RESOURCE CARDS ================= -->
 
 <section class="light-section">
 
 <div class="container">
 
-<h2>Latest Articles</h2>
-
 <div class="cards three-col">
 
-<div class="card">
-<h3>How to Evaluate a Packaging Supplier in China</h3>
-<p>A low quotation tells you very little. Real evaluation looks at production capability, quality systems, export experience, and communication reliability — before you place an order.</p>
-<a href="article-evaluate-packaging-supplier.html">Read Article →</a>
+<div class="card resource-card">
+<span class="step-num">01</span>
+<h3>Company &amp; Service Overview</h3>
+<p>Who we are, what we do, and how ChenBridge supports global companies sourcing from China.</p>
+<div class="resource-actions">
+<a href="assets/resources/company-service-overview.pdf" class="btn-small btn" download>Download Company &amp; Service Overview</a>
+</div>
 </div>
 
-<div class="card">
-<h3>Common Export Packaging Challenges</h3>
-<p>Moisture damage, collapsed cartons, non-compliant wood packaging, and unclear specifications — most export packaging problems are preventable with the right preparation.</p>
-<a href="article-export-packaging-challenges.html">Read Article →</a>
+<div class="card resource-card">
+<span class="step-num">02</span>
+<h3>Packaging Capability Guide</h3>
+<p>An overview of the packaging categories and manufacturing capabilities ChenBridge can source and coordinate in China.</p>
+<div class="resource-actions">
+<a href="assets/resources/packaging-capability-guide.pdf" class="btn-small btn" download>Download Packaging Capability Guide</a>
+</div>
 </div>
 
-<div class="card">
-<h3>How to Improve China Packaging Supply Chain Visibility</h3>
-<p>Visibility does not come from software alone. It comes from agreed reporting routines, defined quality checkpoints, and local verification at the factory.</p>
-<a href="article-packaging-supply-chain-visibility.html">Read Article →</a>
+<div class="card resource-card">
+<span class="step-num">03</span>
+<h3>How ChenBridge Works</h3>
+<p>A practical overview of how ChenBridge identifies suppliers, manages sourcing, coordinates production, and supports execution in China.</p>
+<div class="resource-actions">
+<a href="assets/resources/china-sourcing-process.pdf" class="btn-small btn" download>Download China Sourcing Process</a>
+</div>
 </div>
 
 </div>
@@ -167,11 +174,11 @@ function googleTranslateElementInit() {
 
 <div class="container outcome-strip">
 
-<h3>Have A Packaging Sourcing Question?</h3>
+<h3>Need Something More Specific?</h3>
 
-<p>These topics come from real project work. If you are facing a specific packaging challenge in China, we are happy to discuss it directly.</p>
+<p>If these resources do not cover your project details, contact us with your packaging requirements and we will respond with practical next steps.</p>
 
-<a href="contact.html" class="btn">Get In Touch</a>
+<a href="contact.html" class="btn">Contact Us</a>
 
 </div>
 
@@ -248,6 +255,21 @@ document.getElementById("menu-toggle").addEventListener("click", function(){
 });
 
 // Mobile dropdown: click to expand/collapse (touch-friendly, no hover)
+document.querySelectorAll("#main-nav .dropdown > a").forEach(function(link){
+    link.addEventListener("click", function(e){
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            var parent = this.parentElement;
+            var isOpen = parent.classList.contains("active");
+            document.querySelectorAll("#main-nav .dropdown").forEach(function(d){
+                d.classList.remove("active");
+            });
+            if (!isOpen) parent.classList.add("active");
+        }
+    });
+});
+
+// Mobile dropdown: click to expand/collapse (no hover dependency)
 document.querySelectorAll("#main-nav .dropdown > a").forEach(function(link){
     link.addEventListener("click", function(e){
         if (window.innerWidth <= 900) {

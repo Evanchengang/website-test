@@ -991,9 +991,15 @@ footer {
  visibility: visible;
  transform: none;
  transition: none;
+ max-height: none;
+ overflow: visible;
  }
 
- .dropdown:hover .dropdown-menu,
+ /* Mobile: only show submenu when .active (click), never on hover */
+ .dropdown:hover .dropdown-menu {
+ display: none;
+ }
+
  .dropdown.active .dropdown-menu {
  display: block;
  }
@@ -1002,6 +1008,16 @@ footer {
  padding: 6px 0;
  font-weight: 500;
  color: #6b7280;
+ }
+
+ /* Keep header above content when menu is open */
+ header {
+ position: sticky;
+ z-index: 1000;
+ }
+
+ nav.open {
+ z-index: 1001;
  }
 
  .language-switcher {
