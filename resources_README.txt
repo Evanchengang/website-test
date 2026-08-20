@@ -1,6 +1,6 @@
-Required PDF files (do not rename):
+Downloadable PDFs have moved to:
+  assets/resources/
+
   company-service-overview.pdf
   packaging-capability-guide.pdf
   china-sourcing-process.pdf
-
-Linked from resources.html
