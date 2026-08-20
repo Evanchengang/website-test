@@ -1609,3 +1609,13 @@ section > .container.outcome-strip {
         font-size: 20px;
     }
 }
+
+
+/* SEO: non-primary hero slides use p.hero-slide-heading (same look as h1) */
+.hero-slide .hero-slide-heading {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
